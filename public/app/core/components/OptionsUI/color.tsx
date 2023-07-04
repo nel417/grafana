@@ -28,7 +28,6 @@ interface Props {
 export const ColorValueEditor = ({ value, settings, onChange, details }: Props) => {
   const theme = useTheme2();
   const styles = useStyles2(getStyles);
-  // TODO: make colors a11y
   return (
     <ColorPicker color={value ?? ''} onChange={onChange} enableNamedColors={settings?.enableNamedColors !== false}>
       {({ ref, showColorPicker, hideColorPicker }) => {
